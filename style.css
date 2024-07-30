@@ -108,6 +108,21 @@ body,html{
     border-radius: 20px;
 
 }
+.sign-up-bar{
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    border-radius: 20px;
+    left: 105px;
+    top: -2px;
+}
+
+
 .search-bar:hover{
     background-color: rgb(203, 202, 202);
     transition: ease-in-out 0.2s;
@@ -117,9 +132,20 @@ body,html{
     left: 40px;
     top: 6px;
     font-size: 15px;
-    
     color: black;
-    opacity: 70%;
+}
+.s3{
+    position: absolute;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 40px;
+    top: 7px;
+    font-weight: 400;
+    transition-duration: 0.3s;
+}
+.sign-up-bar:hover{
+    background-color: rgb(85, 85, 85);
+    transition: ease-in-out 0.2s;
 }
 .gg-search {
     box-sizing: border-box;
@@ -149,6 +175,39 @@ body,html{
     transform: rotate(-45deg);
     top: 10px;
     left: 12px
+}
+.gg-profile,
+.gg-profile::after,
+.gg-profile::before {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 100px
+}
+.gg-profile {
+    overflow: hidden;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    top: 4px;
+    left: 5px;
+    position: relative
+}
+.gg-profile::after,
+.gg-profile::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 8px;
+    height: 8px
+}
+.gg-profile::after {
+    border-radius: 200px;
+    top: 11px;
+    left: 0px;
+    width: 18px;
+    height: 18px
 }
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/search.css');
 .img1{
@@ -268,12 +327,12 @@ body:hover .right-text{
    font-size: 120px;
    color: white;
    transition-duration: 0.5s;
- }
+}
  .first-box:hover .first-h1{
     opacity: 1;
-    transition:ease-in-out 1s;
+    transition:ease-in-out 0.8s;
     left: 800px;
- }
+}
  .first-h5{
     width: 400px;
     height: 350px;
@@ -288,13 +347,13 @@ body:hover .right-text{
     transition-duration: 0.5;
     text-align: center;
     
- }
+}
  .first-box:hover .first-h5{
     opacity: 90%;
     left: 850px;
-    transition: ease-in-out 1.5s;
+    transition: ease-in-out 1.2s;
 
- }
+}
  .first-button{
     width: 250px;
     height: 45px;
@@ -309,9 +368,14 @@ body:hover .right-text{
     text-transform: capitalize;
     transition-duration: 0.5s;
     opacity: 0;
- }
+}
  .first-box:hover .first-button{
     opacity: 1;
-    transition: ease-in-out 2s;
-    left: 950px;
- }
+    transition: ease-in-out 1.6s;
+    left: 925px;
+}
+.first-button:hover{
+    background-color: rgb(85, 85, 85);
+    transition: ease-in-out 0.2ms;
+    color: white;
+}
