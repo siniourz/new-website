@@ -1,7 +1,7 @@
 body,html{
     margin: 0px;
     padding: 0px;
-    background-color:pink;
+    background-color:black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-transform: capitalize;
     display: flex;
@@ -286,12 +286,13 @@ body:hover .right-text{
  .first-box:hover .left-small-white{
     width: 20%;
     transition: ease-in-out 0.5s;
+    background-color: white;
 
 }
  .right-small-black{
     width: 50%;
     height: 100%;
-    background-color: black;
+    background-color: white;
     transition-duration: 0.5s;
     float:right;
     position: relative;
@@ -300,7 +301,9 @@ body:hover .right-text{
  .first-box:hover .right-small-black{
     width: 80%;
     transition: ease-in-out 0.5s;
+    background-color: black;
 }
+
  .bw-img{
     width: 500px;
     height: 100%;
@@ -308,6 +311,7 @@ body:hover .right-text{
     left: 420px;
     top: 0;
     opacity: 0;
+
     transition-duration: 0.5s;
 }
  .first-box:hover .bw-img{
@@ -332,6 +336,7 @@ body:hover .right-text{
     opacity: 1;
     transition:ease-in-out 0.8s;
     left: 800px;
+   
 }
  .first-h5{
     width: 400px;
@@ -378,4 +383,70 @@ body:hover .right-text{
     background-color: rgb(85, 85, 85);
     transition: ease-in-out 0.2ms;
     color: white;
+}
+.second-box{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    position: absolute;
+    top: 1390px;
+}
+.right-img2{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    float: right;
+    top: 220px;
+    left:980px;
+    background-color: black;
+    opacity: 0;
+    transition-duration: 1.5s;
+}
+.king2{
+    width: 100%;
+    height: 100%;
+    transition-duration: 1.5s;
+
+}
+.queen,.king3{
+    width: 500px;
+    height: 500px;
+    top: 200px;
+    position: absolute;
+    left: 450px;
+    opacity: 0;
+
+}
+.queen{
+    left: 470px;
+    top: 210px;
+    transition-duration: 1s;
+}
+.king3{
+    left: -20px;
+    transition-duration: 0.5s;
+}
+.second-box:hover .right-img2{
+    opacity: 1;
+    transition: ease-in-out 0.8s;
+
+}
+.second-box:hover .queen{
+    opacity: 1;
+    transition: ease-in-out 1.8s;
+}
+.second-box:hover .king3{
+    opacity: 1;
+    transition: ease-in-out 2.8s
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 40px;
+}
+::-webkit-scrollbar-track{
+    background-attachment: black;
+    height: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
 }
