@@ -275,11 +275,10 @@ body:hover .right-text{
     background-color: black;
     position: absolute;
     top: 692px;
-
 }
  .left-small-white{
     width: 50%;
-    transition-duration:0.5s ;
+    transition-duration: 100000s;
     height: 100%;
     background-color: white;
 }
@@ -293,7 +292,7 @@ body:hover .right-text{
     width: 50%;
     height: 100%;
     background-color: white;
-    transition-duration: 0.5s;
+    transition-duration: 100000s;
     float:right;
     position: relative;
     top: -700px;
@@ -312,7 +311,7 @@ body:hover .right-text{
     top: 0;
     opacity: 0;
 
-    transition-duration: 0.5s;
+    transition-duration: 100000s;
 }
  .first-box:hover .bw-img{
     opacity: 1;
@@ -330,7 +329,7 @@ body:hover .right-text{
    justify-content: middle;
    font-size: 120px;
    color: white;
-   transition-duration: 0.5s;
+   transition-duration: 100000s;
 }
  .first-box:hover .first-h1{
     opacity: 1;
@@ -349,7 +348,7 @@ body:hover .right-text{
     top: 170px;
     left: 1000px;
     opacity: 0;
-    transition-duration: 0.5;
+    transition-duration: 100000s;
     text-align: center;
     
 }
@@ -371,7 +370,7 @@ body:hover .right-text{
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
-    transition-duration: 0.5s;
+    transition-duration: 100000s;
     opacity: 0;
 }
  .first-box:hover .first-button{
@@ -384,61 +383,6 @@ body:hover .right-text{
     transition: ease-in-out 0.2ms;
     color: white;
 }
-.second-box{
-    width: 100%;
-    height: 700px;
-    background-color: black;
-    position: absolute;
-    top: 1390px;
-}
-.right-img2{
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    float: right;
-    top: 220px;
-    left:980px;
-    background-color: black;
-    opacity: 0;
-    transition-duration: 1.5s;
-}
-.king2{
-    width: 100%;
-    height: 100%;
-    transition-duration: 1.5s;
-
-}
-.queen,.king3{
-    width: 500px;
-    height: 500px;
-    top: 200px;
-    position: absolute;
-    left: 450px;
-    opacity: 0;
-
-}
-.queen{
-    left: 470px;
-    top: 210px;
-    transition-duration: 1s;
-}
-.king3{
-    left: -20px;
-    transition-duration: 0.5s;
-}
-.second-box:hover .right-img2{
-    opacity: 1;
-    transition: ease-in-out 0.8s;
-
-}
-.second-box:hover .queen{
-    opacity: 1;
-    transition: ease-in-out 1.8s;
-}
-.second-box:hover .king3{
-    opacity: 1;
-    transition: ease-in-out 2.8s
-}
 ::-webkit-scrollbar{
     width: 10px;
     border-radius: 40px;
@@ -450,3 +394,147 @@ body:hover .right-text{
 ::-webkit-scrollbar-thumb{
     background-color: white;
 }
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 800px;
+    height: 100px;
+    transition-duration: 100000s;
+
+}
+.progress-bar {
+    width: 80%;
+    max-width: 400px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition-duration: 100000s;
+}
+.first-box:hover .loader-container{
+opacity: 0;
+transition: 0.2s;
+}
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: black;
+    animation: fill 4s infinite;
+    position: relative;
+}
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.long-img{
+    width: 100%;
+    height: 1500px;
+    background: linear-gradient(to bottom, black, white);
+    position: absolute;
+    top:1392px;
+}
+.first-v{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left:400px;
+    top: 50px;
+
+}
+.horizontal-line{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.for-back{
+    width: 800px;
+    height: 700px;
+    top: 0px;
+    position: absolute;
+    background: linear-gradient(to right ,black,transparent);
+}
+.topic-h4{
+    font-size: 16px;
+    color: rgb(149, 149, 149);
+    margin-left: 50px;
+    margin-top: 100px;
+
+}
+.topic-h1{
+    font-size: 80px;
+    height: 20%;
+    width: 90%;
+    color: white;
+    margin-left: 40px;
+    margin-top: -30px;
+}
+.topic-h3{
+ font-size: 14px;
+ width: 300px;
+ margin-top: 150px;
+ color: rgb(149, 149, 149);
+ margin-left: 50px;
+ 
+}
+.topic-h4-2{
+margin-left:120px;
+width: 300px;
+color: rgb(149, 149, 149);
+}
+.number-320k{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.number-10k{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+.button-startnow-div{
+    width: 250px;
+    position: relative;
+    left: 70px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    top: 30px;
+    border: none;
+}
+.khode-startnow-button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+}
+.khode-startnow-button:hover{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+.hidden {
+    opacity: 30%;
+    transition: 1s;
+}
+
+
+
+
