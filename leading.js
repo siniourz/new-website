@@ -17,7 +17,7 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.PLAYING) {
-        document.querySelectorAll('.topic-h4, .topic-h1, .topic-h3, .topic-h4-2, .button-startnow-div').forEach(function(element) {
+        document.querySelectorAll('.topic-h4, .topic-h1, .topic-h3, .topic-h4-2, .button-startnow-div, .tuturial').forEach(function(element) {
             element.classList.add('hidden');
         });
     } else if (event.data == YT.PlayerState.PAUSED || event.data == YT.PlayerState.ENDED) {
